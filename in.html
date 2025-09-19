@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Prototype App</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0078ff">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: #0078ff;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 60px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>📱 Team Project App</header>
+  <!-- Embed the prototype directly -->
+  <iframe src="https://www.figma.com/proto/jDnHmg6zOXIpITrrj9DUPt/team-project?node-id=75-86&p=f&t=pTNpkQF7GimwvHYk-1&scaling=min-zoom&content-scaling=fixed&page-id=32%3A2&starting-point-node-id=75%3A86&show-proto-sidebar=1"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
